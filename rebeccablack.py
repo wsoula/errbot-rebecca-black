@@ -5,13 +5,13 @@ class Rebeccablack(BotPlugin):
     """Returns Rebecca Black gif"""
     def callback_message(self, mess):
         """Runs on every message"""
-        if mess.body.upper().find('REBECCABLACK') != -1:
+        if mess.body.upper().find('REBECCABLACKFOO') != -1:
             self.send_card(
                 in_reply_to=mess,
                 color='yellow',
                 image=self.gif()
             )
-        if mess.body.upper().find('REBECCA BLACK') != -1:
+        if mess.body.upper().find('REBECCA BLACKFOO') != -1:
             self.send_card(
                 in_reply_to=mess,
                 color='yellow',
