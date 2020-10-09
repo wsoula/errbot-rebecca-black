@@ -8,13 +8,13 @@ class Rebeccablack(BotPlugin):
         if mess.body.upper().find('REBECCABLACKFOO') != -1:
             self.send_card(
                 in_reply_to=mess,
-                color='yellow',
+                color='white',
                 image=self.gif()
             )
         if mess.body.upper().find('REBECCA BLACKFOO') != -1:
             self.send_card(
                 in_reply_to=mess,
-                color='yellow',
+                color='white',
                 image=self.gif()
             )
 
@@ -28,4 +28,4 @@ class Rebeccablack(BotPlugin):
             "https://media1.giphy.com/media/ZLD94N65BOEGk/giphy.gif?cid=6104955e00471a13f95bf4e59a6adc1b3489d728a75a792f&rid=giphy.gif" # noqa
             "https://media1.giphy.com/media/wuUnCnoMdmPLO/giphy.gif?cid=6104955e8afa9a6cb6f757d7ca8e12f9606af13046b0677f&rid=giphy.gif" # noqa
         ]
-        return random.choice(gifs)
+        return gifs[random.randint(0, len(gifs)-1)]
