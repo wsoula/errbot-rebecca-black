@@ -1,0 +1,9 @@
+[Core]
+Name = Rebeccablack
+Module = rebeccablack
+
+[Documentation]
+Description = Respond with Rebecca Black gif
+
+[Python]
+Version = 3
