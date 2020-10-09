@@ -5,7 +5,7 @@ class Rebeccablack(BotPlugin):
     """Returns Rebecca Black gif"""
     def callback_message(self, mess):
         """Runs on every message"""
-        if mess.body.upper().replace(' ', '').find('REBECCABLACKFOO') != -1:
+        if mess.body.upper().replace(' ', '').find('REBECCABLACK') != -1:
             self.send_card(
                 in_reply_to=mess,
                 color='white',
