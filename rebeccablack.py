@@ -8,11 +8,13 @@ class Rebeccablack(BotPlugin):
         if mess.body.upper().find('REBECCABLACK') != -1:
             self.send_card(
                 in_reply_to=mess,
+                color='yellow',
                 image=self.gif()
             )
         if mess.body.upper().find('REBECCA BLACK') != -1:
             self.send_card(
                 in_reply_to=mess,
+                color='yellow',
                 image=self.gif()
             )
 
