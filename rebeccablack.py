@@ -21,6 +21,7 @@ class Rebeccablack(BotPlugin):
             "https://media3.giphy.com/media/8SS0MSoBHa8la/giphy.gif?cid=6104955ea23136dba6daa7e736954533a653ff80b273acd7&rid=giphy.gif", # noqa
             "https://media1.giphy.com/media/ZLD94N65BOEGk/giphy.gif?cid=6104955e00471a13f95bf4e59a6adc1b3489d728a75a792f&rid=giphy.gif", # noqa
             "https://media1.giphy.com/media/wuUnCnoMdmPLO/giphy.gif?cid=6104955e8afa9a6cb6f757d7ca8e12f9606af13046b0677f&rid=giphy.gif", # noqa
-            "https://media1.giphy.com/media/LqzgIzNWDiyFG/giphy.gif?cid=6104955e9bb19786966124f0446e2b7c9c4a4a22254dad2a&rid=giphy.gif" # noqa
+            "https://media1.giphy.com/media/LqzgIzNWDiyFG/giphy.gif?cid=6104955e9bb19786966124f0446e2b7c9c4a4a22254dad2a&rid=giphy.gif", # noqa
+            "https://media0.giphy.com/media/XdesnSMy28JzO/giphy.gif?cid=6104955e1878d01a8156134a8785d3f1624507d37616eab7&rid=giphy.gif" # noqa
         ]
         return random.choice(gifs)
