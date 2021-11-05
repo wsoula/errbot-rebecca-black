@@ -1,11 +1,14 @@
-from errbot import BotPlugin, botcmd, arg_botcmd, re_botcmd
+""" Return rebecca black gifs if rebecca black is mentioned """
+import os
 import random
+from errbot import BotPlugin, botcmd, arg_botcmd, re_botcmd
+
 
 class Rebeccablack(BotPlugin):
     """Returns Rebecca Black gif"""
     def callback_message(self, mess):
         """Runs on every message"""
-        if mess.body.upper().replace(' ', '').find('REBECCABLACK') != -1:
+        if mess.body.upper().replace(' ', '').find('REBECCABLACK') != -1 and os.getenv('BOT_PREFIX', '!') == os.getenv('PROD_BOT_PREFIX', '!'):
             self.send_card(
                 in_reply_to=mess,
                 color='white',
